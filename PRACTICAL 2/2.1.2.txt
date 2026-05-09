@@ -1,0 +1,37 @@
+# Initial dictionary with 10 predefined records
+student = {
+    1: "Amit",
+    2: "Riya",
+    3: "Kiran",
+    4: "Neha",
+    5: "Arjun",
+    6: "Pooja",
+    7: "Rahul",
+    8: "Sneha",
+    9: "Vikram",
+    10: "Anjali"
+}
+print("Original Dictionary:",student)
+# write your code here...
+
+k = int(input())
+v = input()
+
+student[k] = v
+print("After Insertion:",student)
+
+a = int(input())
+b = input()
+
+student.update({a:b})
+print('After Update:',student)
+
+x = int(input())
+if x in student:
+	del student[x]
+print('After Deletion:',student)
+
+print("Traversing Dictionary:")
+for i,j in student.items():
+	print(i,":",j)
+
